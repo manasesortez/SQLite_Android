@@ -1,2 +1,2 @@
-# SQLite_Android
+# SQLite Android
 This is an application to start to learn SQLite inside of Android 

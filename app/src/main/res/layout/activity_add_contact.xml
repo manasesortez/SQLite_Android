@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#003048"
+    android:name=".Add_Contact"
     tools:ignore="MissingConstraints">
 
     <RelativeLayout
@@ -44,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/segoebold"
-                android:text="Ingresar Contacto!"
+                android:text="Agenda Básica v1.0"
                 android:textColor="#0E284D"
                 android:textSize="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -64,7 +65,7 @@
                 android:drawablePadding="8dp"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Nombre Completo"
+                android:hint="Agregar Nombre Completo"
                 android:inputType="text"
                 android:paddingLeft="15dp"
                 android:textColor="#283241"
@@ -86,7 +87,7 @@
                 android:drawablePadding="8dp"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Número de Teléfono"
+                android:hint="Agregar Número de Teléfono"
                 android:inputType="phone"
                 android:paddingLeft="15dp"
                 android:textColor="#283241"
@@ -135,5 +136,17 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="373dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/form" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

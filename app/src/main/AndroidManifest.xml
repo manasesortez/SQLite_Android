@@ -9,11 +9,12 @@
         android:label="Agenda Básica v1.0"
         android:roundIcon="@drawable/friends"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BitcoinConvert"
+        android:theme="@style/bitcoinTwo"
         tools:ignore="AllowBackup">
         <activity
             android:name=".Add_Contact"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/bitcoinTwo"  />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -28,7 +29,7 @@
         <activity
             android:name=".Contact"
             android:exported="true"
-            android:theme="@style/Theme.BitcoinConvert" />
+            android:theme="@style/bitcoinTwo" />
     </application>
 
 </manifest>

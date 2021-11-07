@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="0px"
+        android:layout_marginBottom="30px"
         android:layout_weight="3"
         android:background="@drawable/card_background"
         android:elevation="36dp"

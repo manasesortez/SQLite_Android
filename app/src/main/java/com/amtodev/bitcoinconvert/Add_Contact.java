@@ -40,11 +40,16 @@ public class Add_Contact extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (nombre.getText().toString().isEmpty()){
-                    Toast.makeText(Add_Contact.this, "No deje ningun campo Vacio", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Add_Contact.this, "No deje ningun campo Vacio",
+                            Toast.LENGTH_LONG).show();
                 }else if (telefono.getText().toString().isEmpty()){
-                    Toast.makeText(Add_Contact.this, "No deje ningun campo Vacio", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Add_Contact.this, "No deje ningun campo Vacio",
+                            Toast.LENGTH_LONG).show();
                 }else {
                     registrar();
+                    nombre.getText().clear();
+                    telefono.getText().clear();
+
                 }
             }
         });

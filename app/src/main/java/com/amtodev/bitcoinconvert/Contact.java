@@ -75,7 +75,6 @@ public class Contact extends AppCompatActivity {
 
     public ArrayList llenarLista(){
         ArrayList<String> miLista = new ArrayList<String>();
-
         SQLiteDatabase base = objConexion.getReadableDatabase();
         String consulta = "select id_contacto,nombre,telefono from contactos WHERE nombre LIKE '%"+ cajaBusquedaNombre.getText().toString() +"%' OR telefono LIKE '%"+ cajaBusquedaTelefono.getText().toString() +"%' " + " order by nombre ASC";
         @SuppressLint("Recycle") Cursor cadaRegistro = base.rawQuery(consulta, null);
